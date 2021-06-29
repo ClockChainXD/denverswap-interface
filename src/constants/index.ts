@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@appleswap/sdk'
 
-export const ROUTER_ADDRESS = '0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3'
+export const ROUTER_ADDRESS = '0x31245017457cc5a4FbfCE8B64149B3ED770c486b'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -36,7 +36,7 @@ export const ETH = new Token(
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+  [ChainId.TESTNET]: [WETH[ChainId.TESTNET]],
 }
 
 // used to construct intermediary pairs for trading
